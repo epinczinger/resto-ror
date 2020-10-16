@@ -16,6 +16,6 @@ User.create!(email: 'admin@excample.com',
         name: 'Pizza',
         description: 'Some fancy description',
         price: 8.99,
-        catering_item: true
+        catering: true
     )
 end

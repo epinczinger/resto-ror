@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'menu/index'
   devise_for :users
   resources :products
+  
+  get 'menu', to: 'menu#index'
 
   root 'pages#home'
   get 'catering', to: 'pages#catering'
